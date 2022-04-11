@@ -1,0 +1,404 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+/* ---------------------------------------------------------header----------------------------------------------------------- */
+.header{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index:3;
+}
+
+.container{
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.container-logo{
+    height: 120px;
+    width: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-tittle{
+    font-size:44px;
+    font-family: segeo UI;
+    color: white;
+    font-weight: 900;
+   
+   
+}
+.container-place{
+    height: 120px;
+    width: 40%;
+    /* background-color: rgb(71, 44, 221); */
+    margin-left: 40%;
+}
+
+.list{
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.list-items{
+    font-family: segeo UI;
+    font-size :22px;;
+    color: white;
+    line-height: 80px;
+    list-style-type: none;
+    transition: 0.4s;
+}
+
+.list-items:hover{
+    color :greenyellow;
+    cursor:pointer;
+}
+/*------------------------------------------------ banner------------------------------------------ */
+.banner{
+    height: 937px;
+    width: 100%;
+    /* background-color: aqua; */
+    overflow: hidden; 
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position-y: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.banner-contains{
+    height: 300px;
+    width: 40%;
+    /* background-color: red; */
+    margin-left: 6%;
+    z-index: 2;
+}
+
+.container-text{
+    font-family: segeo UI;
+    font-size: 60px;
+    margin: 0px;
+    margin-left: 40px;
+    color: white;
+    
+}
+
+.btn{
+    padding:10px;
+    /* background-color:transparent; */
+    font-size: 22px;
+    margin-left: 35%;
+    position: relative;
+    background-color: rgba(251, 249, 246, 0.514);
+    color: azure;
+    cursor: pointer;
+    
+}
+
+.cut{
+    height: 100%;
+    /* height: 300px; */
+    width: 44%;
+    position: absolute;
+    transform: rotateZ(22deg);
+    background-color: rgba(70, 67, 78, 0.9);;
+    z-index: 0;
+}
+/*-------------------------------------------------- css for products------------------------------------------- */
+.products{
+    width: 100%;
+    /* background-color: rgb(226, 155, 155); */
+    display: flex;
+    justify-content:center;
+}
+
+.products-container{
+    /* height: 400px; */
+    width: 95%;
+    display: flex;
+    /* justify-content:center; */
+    flex-direction: column;
+}
+
+.products-specifiers{
+    font-size: 40px;
+    font-family: segeo UI;
+    align-self: center;
+    margin-bottom: 2%;
+    display: flex;
+    /* flex-direction: row; */
+    /* margin-bottom: 0px; */
+    /* background-color: red; */
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+    column-gap: 65px;
+    /* transition: .5s; */
+}
+
+.products-cart{
+    height: 400px;
+    width: 17%;
+    /* background-color: bisque; */
+    margin-bottom: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 5px;
+    overflow: hidden;
+   
+}
+
+.shirt-info:hover{
+    cursor: pointer;
+    height: 400px;
+  
+}
+
+.products-cart:nth-child(1){
+    background-image: url(./images/black\ shirt\ 1.jpg);
+}
+.products-cart:nth-child(2){
+    background-image: url(./images/check\ shirt\ 2.jpg);
+}
+.products-cart:nth-child(3){
+    background-image: url(./images/leather\ jacket3.jpg);
+}
+.products-cart:nth-child(4){
+    background-image: url(./images/blazers4.jpg);
+}
+.products-cart:nth-child(5){
+    background-image: url(./images/tshirts\ 5.jpg);
+}
+.products-cart:nth-child(6){
+    background-image: url(./images/full\ sleave\ tshirt\ 6.jpg);
+}
+.products-cart:nth-child(7){
+    background-image: url(./images/formal\ shirt\ 7.jpg);
+}
+.products-cart:nth-child(8){
+    background-image: url(./images/denim\ shirt\ 8.webp);
+}
+.products-cart:nth-child(9){
+    background-image: url(./images/sleeve\ less\ 9.jpg);
+}
+.products-cart:nth-child(10){
+    background-image: url(./images/crushed\ shirt\ 10.jpg);
+}
+
+
+.shirt-info{
+    height:30%;
+    width:100%;
+    vertical-align: top;
+    background-color: rgba(77, 42, 57, 0.7);
+    padding: 15px;
+    transition: .5s;
+}
+.shirt{
+    margin:0px;
+    font-size: 20px;
+    font-family: segeo UI;
+    color:white
+} 
+.shirt-tittle{
+    margin:0px;
+    font-size: 25px;
+    font-family: segeo UI;
+    color:white
+}
+/* -------------------------------------------------------gallery-------------------------------------------------------- */
+.gallery{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+   position: relative;
+   overflow: hidden;
+}
+
+.gall-materials{
+    /* height: 0vh; */
+    width: 100%;
+   position: absolute;
+   transition: 0.7s;
+   cursor: pointer;
+
+}
+
+.gall-materials1{
+    background-color:#62c4f5;
+}
+
+.gall-materials2{
+    background-color:#ae9798;
+    margin-left: 22%;
+}
+.gall-materials3{
+    background-color:#c0ced4;
+    margin-left: 46%;
+}
+.gall-materials4{
+    background-color:#b3a6a2;
+    margin-left: 72%;
+}
+.gall-materials4:hover{
+    margin-left: 0px;
+}
+.gall-materials3:hover{
+    margin-left: 0px;
+}
+.gall-materials3:hover ~ .gall-materials4{
+    margin-left:100%;
+}
+.gall-materials2:hover{
+    margin-left: 0px;
+}
+.gall-materials2:hover ~ .gall-materials3{
+    margin-left:100%;
+}
+.gall-materials2:hover ~ .gall-materials4{
+    margin-left:100%;
+}
+.gall-materials1:hover ~ .gall-materials4{
+    margin-left:100%;
+}
+.gall-materials1:hover ~ .gall-materials3{
+    margin-left:100%;
+}
+.gall-materials1:hover ~ .gall-materials2{
+    margin-left:100%;
+}
+
+.gall-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 100%;
+    width: 25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red;     */
+}
+
+.gall-img1{
+    height: 100%;
+    width: 100%;
+}
+.gall-txt{
+    height: 90vh;
+    width: 75%;
+    /* background-color:white; */
+    display: flex;
+    justify-content: center;
+    padding:0px 200px;
+}
+
+.txt{
+    font-size: 25px;
+    font-family: segeo UI;
+    margin-top: 20%;
+}
+
+.heading{
+    font-size:48px ;
+    color: white;
+}
+
+.details{
+    font-size: 25px;
+    color: white;
+}
+
+.button{
+    font-size:35px;
+    padding: 15px;
+    background-color: hsl(224, 24%, 40%);
+    margin-left: 32%;
+    color:white
+}
+/*------------------------------------- contacts---------------------------------------------------- */
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgba(0, 0, 0, .6); */
+    overflow: hidden;
+    background-color: #4d515d;
+}
+
+.contacts-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.contacts-tittle{
+    height: 100px;
+    width: 100%;
+    margin:0px 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle{
+    width: 40%;
+    align-self: center;
+    font-size: 40px;
+    font-family: segeo UI;
+    color: white;
+}
+
+.input{
+    display:flex;
+    flex-direction: column;
+   row-gap: 20px;
+   overflow: hidden;
+   
+}
+
+.common{
+   border: 2px solid black;
+   border-radius: 5px;
+}
+
+.name{
+    height: 100%;
+    width: 97%;
+    padding: 12px;
+}
+
+.email{
+    height: 100%;
+    width: 97%;
+    padding: 12px;
+}
+
+.comment{
+    height: 100%;
+    width: 97%;
+    padding: 12px; 
+    margin-bottom: 50px;
+}
